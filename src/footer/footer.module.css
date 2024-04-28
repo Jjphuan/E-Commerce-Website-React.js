@@ -1,0 +1,22 @@
+.outside{
+    margin-top: 50px;
+}
+
+.under{
+    margin: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    font-size: 13px;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.icon{
+    display: flex;
+    width: 18px;
+    margin-left: 13px;
+}

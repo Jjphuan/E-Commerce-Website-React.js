@@ -1,0 +1,38 @@
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.titles{
+    display: flex;
+    position: relative;
+    left: 70px;
+}
+.title_des{
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+}
+.title_rev{
+    border: 1px solid rgba(78, 72, 72, 0.708);
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.details{
+    position: relative; 
+    left: 70px;
+    top: -23px;
+    width: 80%;
+    border: 1px solid;
+    padding: 0 10px;
+}
+
+.des_detail{
+    display: block;
+}
+
+.rev_detail{
+    display: none;
+}

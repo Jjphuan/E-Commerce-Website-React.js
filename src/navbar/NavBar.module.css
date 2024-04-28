@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    background: white;
+    max-height: 100px;
+    border-bottom: 1px solid black;
+}
+
+/* logo field */
+.right{
+    display: flex;
+
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo{
+    width: 60px;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* tag field */
+.list{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+li{
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* login and cart field */
+.right{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+}
+
+.login{
+    font-size: 20px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: hsla(180, 100%, 50%, 0.8);
+    color: white;
+    cursor: pointer;
+}
+
+.cartC{
+    position: relative;
+}
+i{
+    font-size: 20px;
+    margin-left: 20px;
+}
