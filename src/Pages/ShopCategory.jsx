@@ -6,7 +6,7 @@ import style from './pages_css/category.module.css';
 function ShopCategory(props){
 
     function shortname(name){
-        if(name.length > 60){
+        if(name.length > 40){
             return(name.substr(0,40))+".....";
         }
         else{
@@ -34,7 +34,10 @@ function ShopCategory(props){
         }
     }
 
-    let show = popular.filter(cate => cate.category === (useLocation().pathname.replace("/",""))).length <= 12 ? popular.filter(cate => cate.category === (useLocation().pathname.replace("/",""))).length : 12;
+    let show = popular.filter(cate =>
+        cate.category === (useLocation().pathname.replace("/",""))).length <= 12
+        ? popular.filter(cate => cate.category === (useLocation().pathname.replace("/",""))).length
+        : 12;
 
     return(
         <div className={style.sect}>
@@ -53,8 +56,8 @@ function ShopCategory(props){
                         return (
                             <div className={style.product}>
                                 <Link to={`/product/${item.id}`}><img className={style.pic} src={item.image} alt={item.image.replace("src/assets/","")}/></Link>
-                                <div className={style.bar}>
-                                    <p>{shortname(item.name)}</p>
+                                <div className={style.product_bar}>
+                                    <p className={style.product_name}>{shortname(item.name)}</p>
                                     <p className={style.price}>Price:{item.price}</p>
                                     <button className={style.details}>More details</button>
                                 </div>
