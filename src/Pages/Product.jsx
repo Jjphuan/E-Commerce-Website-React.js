@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { popular } from "../assets/popular";
-import Breadcrum from '../Breadcrum/Breadcrum.jsx';
 import DescriptionBox from '../DescriptionBox/DescriptionBox.jsx';
 import DisplayProduct from '../DisplayProduct/DisplayProduct.jsx';
 
@@ -11,7 +10,7 @@ function Product(){
 
     return(
         <div>
-            <Breadcrum category={product.category} name={product.name}/>
+            {/* <Breadcrum category={product.category} name={product.name}/> */}
             <DisplayProduct image={product.image} name={product.name} features={product.features}/>
             <DescriptionBox/>
         </div>

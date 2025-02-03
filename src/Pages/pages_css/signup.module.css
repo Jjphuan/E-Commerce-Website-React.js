@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-items: center;
     border: 1px solid;
+    border-radius: 3px;
     padding: 10px 30px;
 }
 

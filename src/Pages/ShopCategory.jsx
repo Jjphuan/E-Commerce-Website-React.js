@@ -5,14 +5,14 @@ import style from './pages_css/category.module.css';
 
 function ShopCategory(props){
 
-    function shortname(name){
-        if(name.length > 40){
-            return(name.substr(0,40))+".....";
-        }
-        else{
-            return name
-        }
-    }
+    // function shortname(name){
+    //     if(name.length > 40){
+    //         return(name.substr(0,40))+".....";
+    //     }
+    //     else{
+    //         return name
+    //     }
+    // }
 
     function settitle(){
         switch ((useLocation().pathname)) {
@@ -57,7 +57,7 @@ function ShopCategory(props){
                             <div className={style.product}>
                                 <Link to={`/product/${item.id}`}><img className={style.pic} src={item.image} alt={item.image.replace("src/assets/","")}/></Link>
                                 <div className={style.product_bar}>
-                                    <p className={style.product_name}>{shortname(item.name)}</p>
+                                    <p className={style.product_name}>{item.name}</p>
                                     <p className={style.price}>Price:{item.price}</p>
                                     <button className={style.details}>More details</button>
                                 </div>

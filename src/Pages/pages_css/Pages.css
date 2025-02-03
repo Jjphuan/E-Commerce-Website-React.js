@@ -1,12 +1,6 @@
 .main-page{
     width: 100%;
-    height: 520px;
-    background: rgb(253,103,255);
-    background: linear-gradient(180deg, rgba(253,103,255,0.9676724137931034) 13%, 
-                rgba(255, 105, 253, 0.598) 25%, 
-                rgba(255, 99, 247, 0.42) 39%, 
-                rgba(250, 82, 228, 0.413) 60%,
-                rgba(239, 130, 239, 0.064) 73%);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,11 +24,11 @@
 .main-button{
     border: none;
     border-radius: 25px;
-    padding: 13px;
-    background: hsla(148, 100%, 45%, 0.842);
+    padding: 0.5rem 0;
+    background: hsla(224, 5%, 39%, 0.842);
     font-size: 20px;
     font-weight: 600;
-    color: rgb(38, 12, 47);
+    color: rgb(255, 255, 255);
     width: 25%;
     cursor: pointer;
     transition: transform 1s ease;

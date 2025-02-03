@@ -17,11 +17,11 @@ function Nav(){
                 <p className={style.title}>GoBuy</p>
             </div>
             <ul className={style.list}>
-                <li onClick={()=>{setMenu("shop")}}><Link to="/" style={{textDecoration:'none'}}>HOME</Link>{menu === "shop"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("ram")}}><Link to="/ram" style={{textDecoration:'none'}}>RAM</Link>{menu === "ram"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("gpu")}}><Link to="/gpu" style={{textDecoration:'none'}}>GPU</Link>{menu === "gpu"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("cpu")}}><Link to="/cpu" style={{textDecoration:'none'}}>CPU</Link>{menu === "cpu"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("storage")}}><Link to="/storage" style={{textDecoration:'none'}}>STORAGE DEVICE</Link>{menu === "storage"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("shop")}}><Link to="/" style={{textDecoration:'none'}}><p>Home</p></Link>{menu === "shop"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("ram")}}><Link to="/ram" style={{textDecoration:'none'}}><p>RAM</p></Link>{menu === "ram"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("gpu")}}><Link to="/gpu" style={{textDecoration:'none'}}><p>GPU</p></Link>{menu === "gpu"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("cpu")}}><Link to="/cpu" style={{textDecoration:'none'}}><p>CPU</p></Link>{menu === "cpu"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("storage")}}><Link to="/storage" style={{textDecoration:'none'}}><p>STORAGE DEVICE</p></Link>{menu === "storage"?<hr/>:<></>}</li>
             </ul>
             <div className={style.right}>
                 <Link to="/signup"><button className={style.login}>Sign up</button></Link>
